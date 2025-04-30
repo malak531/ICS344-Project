@@ -27,12 +27,12 @@ This project aims to simulate a **real-world cyberattack** on a vulnerable machi
 
 ### Objective
 
-We targeted the **HTTP service** hosted on Metasploitable3, specifically a vulnerable instance of **Apache Tomcat**.
+We targeted the **HTTP service** hosted on Metasploitable3, specifically a vulnerable instance of **Jetty**.
 
 ### Approach
 
 - Identify open ports and services using tools like `nmap`.
-- Target the Apache Tomcat Manager application on port `8180`.
+- Target the Jetty application on port `8080`.
 - Use **Metasploit Framework** to exploit the service and gain remote access.
 
 ---
