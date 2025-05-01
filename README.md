@@ -22,18 +22,17 @@ This project aims to simulate a **real-world cyberattack** on a vulnerable machi
 ### Environment Setup
 
 - **Victim Machine:** Metasploitable3  
-- **Attacker Machine:** Kali Linux (attacking using Metasploit)
+- **Attacker Machine:** Kali Linux (attacking using Metasploit)  
 - **Virtualization Platform:** UTM & VirtualBox (as needed)
 
 ### Objective
 
-We targeted the **HTTP service** hosted on Metasploitable3, specifically a vulnerable instance of **Jetty**.
+Gain unauthorized access to the Metasploitable3 machine by performing a **manual SSH brute-force attack** using lists of common usernames and passwords.
 
 ### Approach
 
-- Identify open ports and services using tools like `nmap`.
-- Target the Jetty application on port `8080`.
-- Use **Metasploit Framework** to exploit the service and gain remote access.
+
+
 
 ---
 
