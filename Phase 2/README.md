@@ -12,7 +12,7 @@ wget -O splunk-9.2.1.deb 'https://download.splunk.com/products/splunk/releases/9
 ```
 
 ```bash
-sudo /opt/splunk/bin/splunk add forward-server 10.0.2.15:9997
+sudo /opt/splunk/bin/splunk add forward-server 10.0.2.7:9997
 sudo /opt/splunk/bin/splunk add monitor /var/log/auth.log
 
 ```
