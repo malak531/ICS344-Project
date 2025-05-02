@@ -5,14 +5,14 @@
 
 Before running any attack, we ensured both machines could communicate over the network.
 
-### Ping from Attacker (Kali) to Victim (Metasploitable3) (the IP address was then changed to 10.0.2.7):
+### Ping from Attacker (Kali) to Victim (Metasploitable3) (the IP address was then changed to 10.0.2.15):
 ```bash
 ping 10.0.2.5
 ```
 ![Alt Text](Attacker_Machine_Pinging_Victim_Machine.png)
 
 
-### Ping from Victim to Attacker :
+### Ping from Victim to Attacker (Attacker IP address changes to 10.0.2.7) :
 ```bash
 ping 10.0.2.15
 ```
