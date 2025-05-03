@@ -3,9 +3,22 @@
 ## Task 1.1: Use Kali Linux tool Metasploit to compromise the service.
 ### Connectivity Verification
 
-Before running any attack, we ensured both machines could communicate over the network.
+Before running any attack, we checked the IP address of both machines and ensured they could communicate over the network without issues.
+### IP Address of Attacker Machine (Kali):
+```bash
+ip a
+```
+![Alt Text](Attacker_Machine_IPAddress.png)
 
-### Ping from Attacker (Kali) to Victim (Metasploitable3):
+
+### IP Address of Victim Machine (Metasploitable3):
+```bash
+ip a
+```
+![Alt Text](Victim_Machine_IPAddress.png)
+
+
+### Ping from Attacker to Victim:
 ```bash
 ping 10.0.2.15
 ```
