@@ -21,8 +21,8 @@ sudo nano /etc/fail2ban/jail.local
 
 ![Alt Text](Download_Necessary_Packages.png)
 
-### Manually SSHD Section
-An SSHD section was added to the file, and this section basically shows that the maximum number of tries to log in is 3, and they can only try again after 1 hour and 40 minutes. 
+### Manually Adding SSHD Section
+We added a SSHD section to the file to listen in on ssh connections and catch bad connections. This section basically shows that the maximum number of tries to log in is 3, and they can only try again after 1 hour and 40 minutes. 
 
 ![Alt Text](Manually_Add_To_File.png)
 
@@ -33,8 +33,8 @@ sudo service fail2ban restart
 ```
 ![Alt Text](Restart_Fail2ban.png)
 
-### Status of Fail2ban
-Since there are no attacks or banned IP addresses, the status is clear. 
+### Status of Fail2ban Before Attack
+Since there have been no attacks or banned IP addresses, the status is clear. 
 
 ![Alt Text](Status_Before.png)
 
@@ -52,6 +52,7 @@ The connection starts to fail because the victim machine bans the attacker machi
 
 
 ### Status of Fail2ban After Attack
+we can clearly see that the attacker machine has been banned which has stopped any further brute force attempts.
 
 ![Alt Text](Status_After.png)
 
