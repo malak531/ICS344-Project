@@ -6,7 +6,7 @@ Use a SIEM platform to collect and visualize data from the victim and the honeyp
 
 ###  Forwarding the Server 
 
-We chose to download the full Splunk on the Victim Machine instead of the universal Splunk forwarder. The command used to download splunk was as follows: 
+We chose to download the full Splunk on the Victim Machine instead of the universal Splunk forwarder and then added the attacker machine as a forwarder on the victim machine and added the auth.log file to be monitored. The commands used to download splunk and add the forwarder and monitor were as follows: 
 ```bash
 wget -O splunk-9.2.1.deb 'https://download.splunk.com/products/splunk/releases/9.2.1/linux/splunk-9.2.1-abc123456789-linux-2.6-amd64.deb'
 ```
